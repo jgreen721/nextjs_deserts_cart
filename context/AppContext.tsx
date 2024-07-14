@@ -67,13 +67,7 @@ export const AppProvider =({children}:any)=>{
       }
 
 
-  
-
-
-    
-
-
-            const values = {
+        const values = {
                     items,
                     cartItems,
                     manageCart,
