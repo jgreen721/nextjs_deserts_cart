@@ -2,7 +2,7 @@ import React from 'react'
 import { useAppContext } from '@/context/AppContext';
 import {ConfirmCard} from "./components"
 
-const index = () => {
+const ConfirmPurchase = () => {
   const {purchased} = useAppContext();
 
   return (
@@ -14,4 +14,4 @@ const index = () => {
   )
 }
 
-export default index
+export default ConfirmPurchase
