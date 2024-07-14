@@ -1,5 +1,4 @@
 import { useAppContext } from '@/context/AppContext'
-// import React, { useEffect,useState } from 'react'
 import { DesertImg,DesertInfo,AddToCartBtn } from './components'
 
 
@@ -20,11 +19,9 @@ const DesertItem:React.FC<DessertItemType> = ({item,delay})=>{
 
          
 
-  
-  
-    const manageCartItem=(action:any)=>{
+      const manageCartItem=(action:any)=>{
       // console.log("Action",action);
-      manageCart(action,item);
+            manageCart(action,item);
     }
   
     return (
@@ -32,7 +29,6 @@ const DesertItem:React.FC<DessertItemType> = ({item,delay})=>{
         <DesertImg item={item} cartItemInfo={cartItems[item.category]}/>
         <AddToCartBtn manageCartItem={manageCartItem} delay={delay * 1.5} cartItemInfo={cartItems[item.category]}/>
         <DesertInfo item={item} cartItemInfo={cartItems[item.category]}/>
-  
       </li>
     )
   }

@@ -27,7 +27,6 @@ li {
   }
 
   .skeleton-loader {
-    /* left: 100%; */
     width: 400%;
     background-image: linear-gradient(to right, gray, lightgray);
     animation: skeletonloader 2s forwards infinite alternate;

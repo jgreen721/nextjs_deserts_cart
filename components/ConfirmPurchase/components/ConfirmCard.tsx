@@ -6,7 +6,7 @@ const ConfirmCard = () => {
   const {cartItems,resetApp} = useAppContext();
 
   return (
-    <div className="relative z-100 bg-white p-5 rounded-lg shadow-md w-full md:w-[550px]">
+    <div className="m-auto relative z-100 bg-white p-5 rounded-lg shadow-md w-full md:w-[550px] mt-[250px]">
       <ConfirmHeader/>
       <div>
         <div className="rounded-md overflow-hidden rounded-lg my-3 bg-main-bg px-4 py-2">

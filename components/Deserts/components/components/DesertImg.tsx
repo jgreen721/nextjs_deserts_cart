@@ -9,7 +9,7 @@ const DesertImg = ({item,cartItemInfo}:any) => {
     setTimeout(()=>setLoaded(true),Math.random() * 8500)
   })
   return (
-    <div className={`relative w-full rounded-lg overflow-hidden h-[200px] min-w-[200px] border-4 border-transparent ${cartItemInfo?.quantity > 0 && 'border-bronze'}`}>
+    <div className={`relative w-full rounded-lg overflow-hidden h-[200px] min-w-[200px] border-4 ${cartItemInfo?.quantity > 0 ? 'border-bronze' : 'border-transparent'}`}>
     {loaded ? <Image
         src={item.image.desktop} 
         alt={`${item.name}-img`}

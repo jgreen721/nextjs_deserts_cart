@@ -33,6 +33,10 @@ const config: Config = {
       },
       borderWidth:{
         "itemunderline-width":"3px"
+      },
+      boxShadow:{
+        "no-press-shadow":"2px -3px 10px inset rgba(10,10,15,.5)",
+        "inset-btn-shadow":"1px -3px 2px inset rgba(10,10,15,.5),2px 3px 2px rgba(10,12,10,.5)"
       }
     },
   },

@@ -17,11 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={redhat.className}>
+      <body className={`${redhat.className} bg-main-bg`}>
       <AppProvider>
         {children}
-        <div className="text-center font-semibold bg-main-bg py-2">
+        <div className="text-center font-semibold py-2">
+          <a href="https://jgreen721dev.com" target="_blank">
           <span className="bg-bronze rounded-md">JG</span>Dev721
+          </a>
         </div>
       </AppProvider>
       </body>
