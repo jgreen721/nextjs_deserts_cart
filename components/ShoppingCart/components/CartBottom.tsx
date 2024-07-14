@@ -15,7 +15,10 @@ const CartBottom = () => {
     </div>
 
     <div>
-      <button onClick={()=>setPurchased(true)} className="w-full rounded-full bg-bronze text-white py-3 transition font-semibold hover:bg-lightbronze hover:text-black shadow-sm">Confirm Order</button>
+      <button onClick={()=>{
+              window.scrollTo(0,0);
+              setPurchased(true)}} 
+        className="w-full rounded-full bg-bronze text-white py-3 transition font-semibold hover:bg-lightbronze hover:text-black shadow-sm">Confirm Order</button>
   </div>
 </div>  )
 }

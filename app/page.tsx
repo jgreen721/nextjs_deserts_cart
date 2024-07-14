@@ -7,7 +7,7 @@ export default function Home() {
       
 
    return (
-    <main className="min-h-screen max-w-[85rem] m-auto bg-main-bg">
+    <main className="max-w-[85rem] m-auto bg-main-bg">
       <div className="w-full relative">
         <div className="w-full relative md:flex md:gap-4 p-4 md:p-10 lg:p-14">
             <div className="md:w-2/3">
