@@ -3,31 +3,103 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose50: hsl(20, 50%, 98%);
+  --rose100: hsl(13, 31%, 94%);
+  --rose300: hsl(14, 25%, 72%);
+  --rose400: hsl(7, 20%, 60%);
+  --rose500: hsl(12, 20%, 44%);
+  --rose900: hsl(14, 65%, 9%);
+  --bronze: rgb(133, 57, 7);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+li {
+  list-style: none;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .skeleton-loader {
+    /* left: 100%; */
+    width: 400%;
+    background-image: linear-gradient(to right, gray, lightgray);
+    animation: skeletonloader 2s forwards infinite alternate;
+  }
+
+  @keyframes skeletonloader {
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .card-fade-in {
+    animation: fade-in-card 1s var(--i) forwards;
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  @keyframes fade-in-card {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-cart-intro {
+    transform: translateY(-50rem);
+    animation: animate-cart-intro 1s 1s forwards;
+  }
+
+  @keyframes animate-cart-intro {
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+
+  .animate-btn-intro {
+    transform: translateY(-10rem);
+    animation: animate-btn-intro 1s var(--i) forwards;
+  }
+
+  @keyframes animate-btn-intro {
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+
+  .animated-underline {
+    clip-path: polygon(0 35%, 100% 0%, 100% 65%, 0% 100%);
+    animation: animate-line 1s var(--i) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  @keyframes animate-line {
+    100% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+  }
+
+  .backdrop-blur {
+    /* border: 4px solid red; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0px);
+    animation: cueblurbg 1s 1s forwards;
+  }
+
+  @keyframes cueblurbg {
+    0% {
+      backdrop-filter: blur(0px);
+    }
+    100% {
+      backdrop-filter: blur(6px);
+    }
   }
 }
