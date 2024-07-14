@@ -14,7 +14,7 @@ const Deserts = ()=>{
 
     return (
       
-      <div className="pb-[300px] md:pb-0">     {/* create space at bottom for fixed element on mobile */}
+      <div className="pb-[250px] md:pb-0">     {/* create space at bottom for fixed element on mobile */}
           <div className="mb-5 w-auto inline-block relative">
               <h3 className="text-4xl font-bold">Desserts</h3>
               <div style={{"--i":"1s"} as any} className="absolute w-full h-[6px] bg-red-500 animated-underline"></div>

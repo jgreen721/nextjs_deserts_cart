@@ -11,7 +11,7 @@ export default function Home() {
             <div className="md:w-2/3">
               <Deserts/>
             </div>
-            <div className="fixed w-full max-h-[400px] overflow-auto z-100 bottom-0 left-0 md:relative md:flex-1 md:max-h-none">
+            <div className="fixed w-full max-h-[300px] overflow-auto z-100 bottom-0 left-0 md:relative md:flex-1 md:max-h-none">
               <ShoppingCart/>
             </div>
               <ConfirmPurchase/>
